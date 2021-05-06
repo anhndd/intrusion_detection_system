@@ -1,0 +1,14 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2021-05-05-22-15-36
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+1620245733.109322	CFrh56V456eeclkqe	10.42.0.34	34052	216.58.214.174	443	tcp	-	0.285277	432	822	OTH	-	-	0	DadA	3	600	6	1173	(empty)
+1620245733.389878	CHjrIZ3rJicSmAjso8	10.42.0.34	55748	216.58.201.238	443	tcp	-	0.137672	1283	424	OTH	-	-	0	DadA	4	1491	6	736	(empty)
+1620245721.613680	CKhp8G2bwkyEW4fnne	10.42.0.34	34606	179.60.192.3	443	tcp	-	11.353897	64	56	OTH	-	-	0	DadA	4	272	4	264	(empty)
+1620245734.692853	C3JLLD2jU3cadGYnvb	10.42.0.1	51160	239.255.255.250	1900	udp	-	-	-	-	OTH	-	-	0	C	0	0	0	0	(empty)
+1620245720.261042	CgvGTx4Q2nn9H7xlgk	fe80::15f1:e3a2:6704:a257	135	ff02::1:ff07:e87c	136	icmp	-	8.128001	120	0	OTH	-	-	0	-	5	360	0	0	(empty)
+#close	2021-05-05-22-15-36

@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	x509
+#open	2021-05-05-22-12-41
+#fields	ts	id	certificate.version	certificate.serial	certificate.subject	certificate.issuer	certificate.not_valid_before	certificate.not_valid_after	certificate.key_alg	certificate.sig_alg	certificate.key_type	certificate.key_length	certificate.exponent	certificate.curve	san.dns	san.uri	san.email	san.ip	basic_constraints.ca	basic_constraints.path_len
+#types	time	string	count	string	string	string	time	time	string	string	string	count	string	string	vector[string]	vector[string]	vector[string]	vector[addr]	bool	count
+1620245561.629241	FlXeVP12TCoNZwYuw6	3	A15434C2695FB1880300000000CBF786	CN=imap.gmail.com,O=Google LLC,L=Mountain View,ST=California,C=US	CN=GTS CA 1O1,O=Google Trust Services,C=US	1618301748.000000	1625559347.000000	id-ecPublicKey	sha256WithRSAEncryption	ecdsa	256	-	prime256v1	imap.gmail.com	-	-	-	F	-
+1620245561.629241	FXJn1P3k8Se1Mnxlaf	3	01E3B49AA18D8AA981256950B8	CN=GTS CA 1O1,O=Google Trust Services,C=US	CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R2	1497477642.000000	1639522842.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0
+1620245561.635449	FryQsk3c7lIsvbaEge	3	A15434C2695FB1880300000000CBF786	CN=imap.gmail.com,O=Google LLC,L=Mountain View,ST=California,C=US	CN=GTS CA 1O1,O=Google Trust Services,C=US	1618301748.000000	1625559347.000000	id-ecPublicKey	sha256WithRSAEncryption	ecdsa	256	-	prime256v1	imap.gmail.com	-	-	-	F	-
+1620245561.635449	FlR6v031b7WBnisFUk	3	01E3B49AA18D8AA981256950B8	CN=GTS CA 1O1,O=Google Trust Services,C=US	CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R2	1497477642.000000	1639522842.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0
+#close	2021-05-05-22-12-41
