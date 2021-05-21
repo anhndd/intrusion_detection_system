@@ -4,16 +4,6 @@ from packetProcessed import realPacket, processedPacket
 import queue, numpy, os
 from kdd_predict import predict_data,number_of_label,label_list
 
-# column_realpacket = "num_conn, startTimet, orig_pt, resp_pt, orig_ht, resp_ht, duration, protocol, resp_pt, flag, src_bytes, dst_bytes, land, wrong_fragment, urg, hot, num_failed_logins, logged_in, num_compromised, root_shell, su_attempted, num_root, num_file_creations, num_shells, num_access_files, num_outbound_cmds, is_hot_login, is_guest_login, count_sec, srv_count_sec, serror_rate_sec, srv_serror_rate_sec, rerror_rate_sec, srv_error_rate_sec, same_srv_rate_sec, diff_srv_rate_sec, srv_diff_host_rate_sec, count_100, srv_count_100, same_srv_rate_100, diff_srv_rate_100, same_src_port_rate_100, srv_diff_host_rate_100, serror_rate_100, srv_serror_rate_100, rerror_rate_100, srv_rerror_rate_100"
-# column_KDD = ['duration', 'protocol_type', 'service', 'flag', 'src_bytes', 'dst_bytes', 'land', 'wrong_fragment',
-#               'urgent', 'hot', 'num_failed_logins', 'logged_in', 'num_compromised', 'root_shell', 'su_attempted',
-#               'num_root', 'num_file_creations', 'num_shells', 'num_access_files', 'num_outbound_cmds', 'is_host_login',
-#               'is_guest_login', 'count', 'srv_count', 'serror_rate', 'srv_serror_rate', 'rerror_rate',
-#               'srv_rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'srv_diff_host_rate', 'dst_host_count',
-#               'dst_host_srv_count', 'dst_host_same_srv_rate', 'dst_host_diff_srv_rate', 'dst_host_same_src_port_rate',
-#               'dst_host_srv_diff_host_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'dst_host_rerror_rate',
-#               'dst_host_srv_rerror_rate']
-
 max_size_batch = 50
 max_shown_ip = 20
 packets = []
@@ -122,5 +112,5 @@ def capture_packet(packet):
 
 threadProcessQueue = threading.Thread(name='threadProcessQueue', target=process_queue)
 threadProcessQueue.start()
-# sniff(iface="enp3s0", prn=capture_packet)
-sniff(iface="wlo1",prn=capture_packet)
+sniff(iface="enp3s0", prn=capture_packet)
+#sniff(iface="wlo1",prn=capture_packet)
