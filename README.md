@@ -3,7 +3,4 @@ Deep Learning is applied to contruct the agent for intrusion detection. The agen
 
 Here is a demo of the attacking detection.
 
-# video
-
 https://drive.google.com/file/d/1leqReaQiTN1aULf-MxvKd_vMFwxdGxzQ/view
-<iframe src="https://drive.google.com/file/d/1leqReaQiTN1aULf-MxvKd_vMFwxdGxzQ/preview" width="640" height="480" allow="autoplay"></iframe>
